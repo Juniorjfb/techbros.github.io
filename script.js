@@ -1,7 +1,7 @@
 (function() {
 
 	function init(item) {
-		var items = item.querySelectorAll('li'),
+		var items = item.querySelectorAll('li, botones'),
         current = 0,
         autoUpdate = true,
         timeTrans = 4000;
@@ -56,7 +56,7 @@
 		}
     
     item.addEventListener('mouseenter', function() {
-			autoUpdate = false;
+			autoUpdate = true;
 		});
 
 		item.addEventListener('mouseleave', function() {
